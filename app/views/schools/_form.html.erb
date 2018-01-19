@@ -1,0 +1,57 @@
+<%= form_with(model: school, local: true) do |form| %>
+  <% if school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+      <% school.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :quartier_id %>
+    <%= form.text_field :quartier_id, id: :school_quartier_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :school_name %>
+    <%= form.text_field :school_name, id: :school_school_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contacts %>
+    <%= form.text_field :contacts, id: :school_contacts %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :school_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :academie %>
+    <%= form.text_field :academie, id: :school_academie %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reinscription %>
+    <%= form.check_box :reinscription, id: :school_reinscription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :school_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :school_longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

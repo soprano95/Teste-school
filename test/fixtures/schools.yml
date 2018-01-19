@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quartier: one
+  school_name: MyString
+  contacts: 
+  address: MyString
+  academie: MyString
+  reinscription: false
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  quartier: two
+  school_name: MyString
+  contacts: 
+  address: MyString
+  academie: MyString
+  reinscription: false
+  latitude: 1.5
+  longitude: 1.5

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119210421) do
+ActiveRecord::Schema.define(version: 20180119210846) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -96,7 +96,22 @@ ActiveRecord::Schema.define(version: 20180119210421) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "schools", force: :cascade do |t|
+    t.bigint "quartier_id"
+    t.string "school_name"
+    t.hstore "contacts"
+    t.string "address"
+    t.string "academie"
+    t.boolean "reinscription"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["quartier_id"], name: "index_schools_on_quartier_id"
+  end
+
   add_foreign_key "cercles", "regions", column: "regions_id"
   add_foreign_key "communes", "cercles"
   add_foreign_key "quartiers", "communes"
+  add_foreign_key "schools", "quartiers"
 end
