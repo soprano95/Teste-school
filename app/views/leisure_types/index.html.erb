@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Leisure Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leisure type name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leisure_types.each do |leisure_type| %>
+      <tr>
+        <td><%= leisure_type.leisure_type_name %></td>
+        <td><%= link_to 'Show', leisure_type %></td>
+        <td><%= link_to 'Edit', edit_leisure_type_path(leisure_type) %></td>
+        <td><%= link_to 'Destroy', leisure_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Leisure Type', new_leisure_type_path %>
