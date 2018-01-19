@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @filiere.level %>
+</p>
+
+<p>
+  <strong>Filiere name:</strong>
+  <%= @filiere.filiere_name %>
+</p>
+
+<%= link_to 'Edit', edit_filiere_path(@filiere) %> |
+<%= link_to 'Back', filieres_path %>
