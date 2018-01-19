@@ -1,0 +1,22 @@
+<%= form_with(model: religion, local: true) do |form| %>
+  <% if religion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(religion.errors.count, "error") %> prohibited this religion from being saved:</h2>
+
+      <ul>
+      <% religion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :religion_name %>
+    <%= form.text_field :religion_name, id: :religion_religion_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
