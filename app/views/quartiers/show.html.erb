@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Commune:</strong>
+  <%= @quartier.commune %>
+</p>
+
+<p>
+  <strong>Quartier name:</strong>
+  <%= @quartier.quartier_name %>
+</p>
+
+<p>
+  <strong>Quartier name short:</strong>
+  <%= @quartier.quartier_name_short %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @quartier.position %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @quartier.code %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @quartier.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @quartier.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_quartier_path(@quartier) %> |
+<%= link_to 'Back', quartiers_path %>

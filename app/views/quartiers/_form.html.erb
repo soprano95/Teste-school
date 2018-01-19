@@ -1,0 +1,52 @@
+<%= form_with(model: quartier, local: true) do |form| %>
+  <% if quartier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quartier.errors.count, "error") %> prohibited this quartier from being saved:</h2>
+
+      <ul>
+      <% quartier.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :commune_id %>
+    <%= form.text_field :commune_id, id: :quartier_commune_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quartier_name %>
+    <%= form.text_field :quartier_name, id: :quartier_quartier_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quartier_name_short %>
+    <%= form.text_field :quartier_name_short, id: :quartier_quartier_name_short %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.number_field :position, id: :quartier_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code, id: :quartier_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :quartier_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :quartier_longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

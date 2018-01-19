@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commune: one
+  quartier_name: MyString
+  quartier_name_short: MyString
+  position: 1
+  code: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  commune: two
+  quartier_name: MyString
+  quartier_name_short: MyString
+  position: 1
+  code: MyString
+  latitude: 1.5
+  longitude: 1.5

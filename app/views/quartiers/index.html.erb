@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Quartiers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Commune</th>
+      <th>Quartier name</th>
+      <th>Quartier name short</th>
+      <th>Position</th>
+      <th>Code</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quartiers.each do |quartier| %>
+      <tr>
+        <td><%= quartier.commune %></td>
+        <td><%= quartier.quartier_name %></td>
+        <td><%= quartier.quartier_name_short %></td>
+        <td><%= quartier.position %></td>
+        <td><%= quartier.code %></td>
+        <td><%= quartier.latitude %></td>
+        <td><%= quartier.longitude %></td>
+        <td><%= link_to 'Show', quartier %></td>
+        <td><%= link_to 'Edit', edit_quartier_path(quartier) %></td>
+        <td><%= link_to 'Destroy', quartier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quartier', new_quartier_path %>
