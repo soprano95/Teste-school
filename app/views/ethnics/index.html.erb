@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ethnics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ethnic name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ethnics.each do |ethnic| %>
+      <tr>
+        <td><%= ethnic.ethnic_name %></td>
+        <td><%= link_to 'Show', ethnic %></td>
+        <td><%= link_to 'Edit', edit_ethnic_path(ethnic) %></td>
+        <td><%= link_to 'Destroy', ethnic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ethnic', new_ethnic_path %>
