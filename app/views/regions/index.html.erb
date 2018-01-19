@@ -6,6 +6,11 @@
   <thead>
     <tr>
       <th>Region name</th>
+      <th>Region name short</th>
+      <th>Position</th>
+      <th>Code</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +19,11 @@
     <% @regions.each do |region| %>
       <tr>
         <td><%= region.region_name %></td>
+        <td><%= region.region_name_short %></td>
+        <td><%= region.position %></td>
+        <td><%= region.code %></td>
+        <td><%= region.latitude %></td>
+        <td><%= region.longitude %></td>
         <td><%= link_to 'Show', region %></td>
         <td><%= link_to 'Edit', edit_region_path(region) %></td>
         <td><%= link_to 'Destroy', region, method: :delete, data: { confirm: 'Are you sure?' } %></td>

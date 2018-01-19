@@ -16,6 +16,31 @@
     <%= form.text_field :region_name, id: :region_region_name %>
   </div>
 
+  <div class="field">
+    <%= form.label :region_name_short %>
+    <%= form.text_field :region_name_short, id: :region_region_name_short %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.number_field :position, id: :region_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code, id: :region_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :region_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :region_longitude %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

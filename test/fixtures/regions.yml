@@ -2,6 +2,16 @@
 
 one:
   region_name: MyString
+  region_name_short: MyString
+  position: 1
+  code: MyString
+  latitude: 1.5
+  longitude: 1.5
 
 two:
   region_name: MyString
+  region_name_short: MyString
+  position: 1
+  code: MyString
+  latitude: 1.5
+  longitude: 1.5

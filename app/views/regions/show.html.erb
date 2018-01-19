@@ -5,5 +5,30 @@
   <%= @region.region_name %>
 </p>
 
+<p>
+  <strong>Region name short:</strong>
+  <%= @region.region_name_short %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @region.position %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @region.code %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @region.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @region.longitude %>
+</p>
+
 <%= link_to 'Edit', edit_region_path(@region) %> |
 <%= link_to 'Back', regions_path %>
