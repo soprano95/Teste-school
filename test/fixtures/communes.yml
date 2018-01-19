@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cercle: one
+  commune_name: MyString
+  commune_name_short: MyString
+  position: 1
+  code: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  cercle: two
+  commune_name: MyString
+  commune_name_short: MyString
+  position: 1
+  code: MyString
+  latitude: 1.5
+  longitude: 1.5

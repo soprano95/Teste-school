@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :communes
   resources :cercles
   resources :regions
   resources :ethnics

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119094022) do
+ActiveRecord::Schema.define(version: 20180119094446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,19 @@ ActiveRecord::Schema.define(version: 20180119094022) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["regions_id"], name: "index_cercles_on_regions_id"
+  end
+
+  create_table "communes", force: :cascade do |t|
+    t.bigint "cercle_id"
+    t.string "commune_name"
+    t.string "commune_name_short"
+    t.integer "position"
+    t.string "code"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cercle_id"], name: "index_communes_on_cercle_id"
   end
 
   create_table "ethnics", force: :cascade do |t|
@@ -52,4 +65,5 @@ ActiveRecord::Schema.define(version: 20180119094022) do
   end
 
   add_foreign_key "cercles", "regions", column: "regions_id"
+  add_foreign_key "communes", "cercles"
 end
