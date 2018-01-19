@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119211941) do
+ActiveRecord::Schema.define(version: 20180119212135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,14 @@ ActiveRecord::Schema.define(version: 20180119211941) do
     t.string "grade_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "levels", force: :cascade do |t|
+    t.bigint "cycle_id"
+    t.string "level_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cycle_id"], name: "index_levels_on_cycle_id"
   end
 
   create_table "people", force: :cascade do |t|
@@ -134,6 +142,7 @@ ActiveRecord::Schema.define(version: 20180119211941) do
 
   add_foreign_key "cercles", "regions", column: "regions_id"
   add_foreign_key "communes", "cercles"
+  add_foreign_key "levels", "cycles"
   add_foreign_key "quartiers", "communes"
   add_foreign_key "schools", "quartiers"
 end
