@@ -1,0 +1,52 @@
+<%= form_with(model: cercle, local: true) do |form| %>
+  <% if cercle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cercle.errors.count, "error") %> prohibited this cercle from being saved:</h2>
+
+      <ul>
+      <% cercle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :regions_id %>
+    <%= form.text_field :regions_id, id: :cercle_regions_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cercle_name %>
+    <%= form.text_field :cercle_name, id: :cercle_cercle_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cercle_name_short %>
+    <%= form.text_field :cercle_name_short, id: :cercle_cercle_name_short %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.number_field :position, id: :cercle_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code, id: :cercle_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :cercle_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :cercle_longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

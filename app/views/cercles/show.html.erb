@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regions:</strong>
+  <%= @cercle.regions %>
+</p>
+
+<p>
+  <strong>Cercle name:</strong>
+  <%= @cercle.cercle_name %>
+</p>
+
+<p>
+  <strong>Cercle name short:</strong>
+  <%= @cercle.cercle_name_short %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @cercle.position %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @cercle.code %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @cercle.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @cercle.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_cercle_path(@cercle) %> |
+<%= link_to 'Back', cercles_path %>
