@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Areas Skills</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Areas skill name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @areas_skills.each do |areas_skill| %>
+      <tr>
+        <td><%= areas_skill.areas_skill_name %></td>
+        <td><%= link_to 'Show', areas_skill %></td>
+        <td><%= link_to 'Edit', edit_areas_skill_path(areas_skill) %></td>
+        <td><%= link_to 'Destroy', areas_skill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Areas Skill', new_areas_skill_path %>

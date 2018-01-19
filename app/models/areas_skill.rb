@@ -1,0 +1,2 @@
+class AreasSkill < ApplicationRecord
+end
