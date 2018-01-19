@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  person: one
+  leisure_type: one
+  leisure_name: MyString
+
+two:
+  person: two
+  leisure_type: two
+  leisure_name: MyString

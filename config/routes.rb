@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :leisures
   resources :leisure_types
   resources :skills
   resources :areas_skills

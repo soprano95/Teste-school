@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @leisure.person %>
+</p>
+
+<p>
+  <strong>Leisure type:</strong>
+  <%= @leisure.leisure_type %>
+</p>
+
+<p>
+  <strong>Leisure name:</strong>
+  <%= @leisure.leisure_name %>
+</p>
+
+<%= link_to 'Edit', edit_leisure_path(@leisure) %> |
+<%= link_to 'Back', leisures_path %>

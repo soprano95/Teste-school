@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119213616) do
+ActiveRecord::Schema.define(version: 20180119213910) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -105,6 +105,16 @@ ActiveRecord::Schema.define(version: 20180119213616) do
     t.string "leisure_type_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "leisures", force: :cascade do |t|
+    t.bigint "person_id"
+    t.bigint "leisure_type_id"
+    t.string "leisure_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["leisure_type_id"], name: "index_leisures_on_leisure_type_id"
+    t.index ["person_id"], name: "index_leisures_on_person_id"
   end
 
   create_table "levels", force: :cascade do |t|
@@ -212,6 +222,8 @@ ActiveRecord::Schema.define(version: 20180119213616) do
   add_foreign_key "enrollments", "schools"
   add_foreign_key "experiences", "people"
   add_foreign_key "filieres", "levels"
+  add_foreign_key "leisures", "leisure_types"
+  add_foreign_key "leisures", "people"
   add_foreign_key "levels", "cycles"
   add_foreign_key "quartiers", "communes"
   add_foreign_key "schools", "quartiers"
