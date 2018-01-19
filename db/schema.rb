@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119094950) do
+ActiveRecord::Schema.define(version: 20180119210421) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "cercles", force: :cascade do |t|
     t.bigint "regions_id"
@@ -43,6 +44,24 @@ ActiveRecord::Schema.define(version: 20180119094950) do
 
   create_table "ethnics", force: :cascade do |t|
     t.string "ethnic_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "middle_name"
+    t.string "sexe"
+    t.datetime "date_nai"
+    t.string "lieu_nai"
+    t.string "situation_family"
+    t.string "regime_matrimonial"
+    t.hstore "contact"
+    t.string "email"
+    t.string "address"
+    t.hstore "personId"
+    t.boolean "life"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

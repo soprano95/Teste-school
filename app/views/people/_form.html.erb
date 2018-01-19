@@ -1,0 +1,82 @@
+<%= form_with(model: person, local: true) do |form| %>
+  <% if person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :person_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :person_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_name %>
+    <%= form.text_field :middle_name, id: :person_middle_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexe %>
+    <%= form.text_field :sexe, id: :person_sexe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_nai %>
+    <%= form.datetime_select :date_nai, id: :person_date_nai %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lieu_nai %>
+    <%= form.text_field :lieu_nai, id: :person_lieu_nai %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situation_family %>
+    <%= form.text_field :situation_family, id: :person_situation_family %>
+  </div>
+
+  <div class="field">
+    <%= form.label :regime_matrimonial %>
+    <%= form.text_field :regime_matrimonial, id: :person_regime_matrimonial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact %>
+    <%= form.text_field :contact, id: :person_contact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :person_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :person_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :personId %>
+    <%= form.text_field :personId, id: :person_personId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :life %>
+    <%= form.check_box :life, id: :person_life %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
