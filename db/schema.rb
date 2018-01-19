@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119213025) do
+ActiveRecord::Schema.define(version: 20180119213148) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -174,6 +174,14 @@ ActiveRecord::Schema.define(version: 20180119213025) do
     t.index ["quartier_id"], name: "index_schools_on_quartier_id"
   end
 
+  create_table "trainings", force: :cascade do |t|
+    t.bigint "person_id"
+    t.string "training_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["person_id"], name: "index_trainings_on_person_id"
+  end
+
   add_foreign_key "cercles", "regions", column: "regions_id"
   add_foreign_key "communes", "cercles"
   add_foreign_key "enrollments", "filieres"
@@ -185,4 +193,5 @@ ActiveRecord::Schema.define(version: 20180119213025) do
   add_foreign_key "levels", "cycles"
   add_foreign_key "quartiers", "communes"
   add_foreign_key "schools", "quartiers"
+  add_foreign_key "trainings", "people"
 end

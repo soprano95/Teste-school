@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trainings
   resources :experiences
   resources :enrollments
   resources :filieres
