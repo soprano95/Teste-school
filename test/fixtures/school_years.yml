@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  annee_scolaire: MyString
+  start_date: 2018-01-19 21:10:59
+  end_date: 2018-01-19 21:10:59
+  status: false
+
+two:
+  annee_scolaire: MyString
+  start_date: 2018-01-19 21:10:59
+  end_date: 2018-01-19 21:10:59
+  status: false
