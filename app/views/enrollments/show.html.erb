@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>School:</strong>
+  <%= @enrollment.school %>
+</p>
+
+<p>
+  <strong>Person student:</strong>
+  <%= @enrollment.person_student_id %>
+</p>
+
+<p>
+  <strong>Type enroll:</strong>
+  <%= @enrollment.type_enroll %>
+</p>
+
+<p>
+  <strong>Num:</strong>
+  <%= @enrollment.num %>
+</p>
+
+<p>
+  <strong>Num enroll:</strong>
+  <%= @enrollment.num_enroll %>
+</p>
+
+<p>
+  <strong>School year:</strong>
+  <%= @enrollment.school_year %>
+</p>
+
+<p>
+  <strong>Date enroll:</strong>
+  <%= @enrollment.date_enroll %>
+</p>
+
+<p>
+  <strong>Filiere:</strong>
+  <%= @enrollment.filiere %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @enrollment.grade %>
+</p>
+
+<%= link_to 'Edit', edit_enrollment_path(@enrollment) %> |
+<%= link_to 'Back', enrollments_path %>

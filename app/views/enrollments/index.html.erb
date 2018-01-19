@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Enrollments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>School</th>
+      <th>Person student</th>
+      <th>Type enroll</th>
+      <th>Num</th>
+      <th>Num enroll</th>
+      <th>School year</th>
+      <th>Date enroll</th>
+      <th>Filiere</th>
+      <th>Grade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enrollments.each do |enrollment| %>
+      <tr>
+        <td><%= enrollment.school %></td>
+        <td><%= enrollment.person_student_id %></td>
+        <td><%= enrollment.type_enroll %></td>
+        <td><%= enrollment.num %></td>
+        <td><%= enrollment.num_enroll %></td>
+        <td><%= enrollment.school_year %></td>
+        <td><%= enrollment.date_enroll %></td>
+        <td><%= enrollment.filiere %></td>
+        <td><%= enrollment.grade %></td>
+        <td><%= link_to 'Show', enrollment %></td>
+        <td><%= link_to 'Edit', edit_enrollment_path(enrollment) %></td>
+        <td><%= link_to 'Destroy', enrollment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enrollment', new_enrollment_path %>

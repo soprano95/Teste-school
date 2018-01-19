@@ -1,0 +1,62 @@
+<%= form_with(model: enrollment, local: true) do |form| %>
+  <% if enrollment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(enrollment.errors.count, "error") %> prohibited this enrollment from being saved:</h2>
+
+      <ul>
+      <% enrollment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :school_id %>
+    <%= form.text_field :school_id, id: :enrollment_school_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :person_student_id %>
+    <%= form.number_field :person_student_id, id: :enrollment_person_student_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_enroll %>
+    <%= form.text_field :type_enroll, id: :enrollment_type_enroll %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num %>
+    <%= form.text_field :num, id: :enrollment_num %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_enroll %>
+    <%= form.text_field :num_enroll, id: :enrollment_num_enroll %>
+  </div>
+
+  <div class="field">
+    <%= form.label :school_year_id %>
+    <%= form.text_field :school_year_id, id: :enrollment_school_year_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_enroll %>
+    <%= form.datetime_select :date_enroll, id: :enrollment_date_enroll %>
+  </div>
+
+  <div class="field">
+    <%= form.label :filiere_id %>
+    <%= form.text_field :filiere_id, id: :enrollment_filiere_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade_id %>
+    <%= form.text_field :grade_id, id: :enrollment_grade_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

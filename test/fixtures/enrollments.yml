@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: one
+  person_student_id: 1
+  type_enroll: MyString
+  num: MyString
+  num_enroll: MyString
+  school_year: one
+  date_enroll: 2018-01-19 21:26:02
+  filiere: one
+  grade: one
+
+two:
+  school: two
+  person_student_id: 1
+  type_enroll: MyString
+  num: MyString
+  num_enroll: MyString
+  school_year: two
+  date_enroll: 2018-01-19 21:26:02
+  filiere: two
+  grade: two

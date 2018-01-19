@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119212241) do
+ActiveRecord::Schema.define(version: 20180119212602) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,24 @@ ActiveRecord::Schema.define(version: 20180119212241) do
     t.string "cycle_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "enrollments", force: :cascade do |t|
+    t.bigint "school_id"
+    t.integer "person_student_id"
+    t.string "type_enroll"
+    t.string "num"
+    t.string "num_enroll"
+    t.bigint "school_year_id"
+    t.datetime "date_enroll"
+    t.bigint "filiere_id"
+    t.bigint "grade_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["filiere_id"], name: "index_enrollments_on_filiere_id"
+    t.index ["grade_id"], name: "index_enrollments_on_grade_id"
+    t.index ["school_id"], name: "index_enrollments_on_school_id"
+    t.index ["school_year_id"], name: "index_enrollments_on_school_year_id"
   end
 
   create_table "ethnics", force: :cascade do |t|
@@ -150,6 +168,10 @@ ActiveRecord::Schema.define(version: 20180119212241) do
 
   add_foreign_key "cercles", "regions", column: "regions_id"
   add_foreign_key "communes", "cercles"
+  add_foreign_key "enrollments", "filieres"
+  add_foreign_key "enrollments", "grades"
+  add_foreign_key "enrollments", "school_years"
+  add_foreign_key "enrollments", "schools"
   add_foreign_key "filieres", "levels"
   add_foreign_key "levels", "cycles"
   add_foreign_key "quartiers", "communes"
