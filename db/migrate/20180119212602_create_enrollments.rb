@@ -2,7 +2,7 @@ class CreateEnrollments < ActiveRecord::Migration[5.1]
   def change
     create_table :enrollments do |t|
       t.references :school, foreign_key: true
-      t.integer :person_student_id
+      t.references :student, references: :person, index: true
       t.string :type_enroll
       t.string :num
       t.string :num_enroll

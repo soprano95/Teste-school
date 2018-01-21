@@ -11,50 +11,36 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :school_id %>
-    <%= form.text_field :school_id, id: :enrollment_school_id %>
-  </div>
+      <%= form.fields_for :student do |rs| %>
+        <div id="company" class="col-md-6 col-xs-12">
+          <%= rs.text_field :first_name, label: 'Nome', placeholder:'Votre' %>
+          <%= rs.text_field :last_name, label: 'Nome', placeholder:'Votre_Prenom' %>
+        </div>
+      <% end %>
 
-  <div class="field">
-    <%= form.label :person_student_id %>
-    <%= form.number_field :person_student_id, id: :enrollment_person_student_id %>
-  </div>
 
-  <div class="field">
-    <%= form.label :type_enroll %>
-    <%= form.text_field :type_enroll, id: :enrollment_type_enroll %>
-  </div>
+    <div class="col-md-6 col-xs-12">
+      <%= form.radio_button :sexe, "M", label: "Masculin", checked: true, inline: true %>
+      <%= form.radio_button :sexe, "F", label: "Feminin", inline: true %>
+    </div>
 
-  <div class="field">
-    <%= form.label :num %>
-    <%= form.text_field :num, id: :enrollment_num %>
-  </div>
+    <div class="col-md-6 col-xs-12">
+      <%= form.text_field :nationalite, label: "Nationalité", class: 'form-control', placeholder: 'Malienne...' %>
+    </div>
 
-  <div class="field">
-    <%= form.label :num_enroll %>
-    <%= form.text_field :num_enroll, id: :enrollment_num_enroll %>
-  </div>
+    <div class="col-md-6 col-xs-12">
+      <%= form.text_field :lieu_nai, label: "Lieu de naissance", class: 'form-control', placeholder: 'Bamako...' %>
+    </div>
 
-  <div class="field">
-    <%= form.label :school_year_id %>
-    <%= form.text_field :school_year_id, id: :enrollment_school_year_id %>
-  </div>
+
+
+
 
   <div class="field">
     <%= form.label :date_enroll %>
     <%= form.datetime_select :date_enroll, id: :enrollment_date_enroll %>
   </div>
 
-  <div class="field">
-    <%= form.label :filiere_id %>
-    <%= form.text_field :filiere_id, id: :enrollment_filiere_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :grade_id %>
-    <%= form.text_field :grade_id, id: :enrollment_grade_id %>
-  </div>
 
   <div class="actions">
     <%= form.submit %>

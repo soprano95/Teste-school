@@ -15,6 +15,7 @@ class EnrollmentsController < ApplicationController
   # GET /enrollments/new
   def new
     @enrollment = Enrollment.new
+    @enrollment.build_student
   end
 
   # GET /enrollments/1/edit
@@ -69,6 +70,43 @@ class EnrollmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enrollment_params
-      params.require(:enrollment).permit(:school_id, :person_student_id, :type_enroll, :num, :num_enroll, :school_year_id, :date_enroll, :filiere_id, :grade_id)
+      params.require(:enrollment).permit(
+          :school_id,
+          :student_id,
+          :type_enroll,
+          :num,
+          :num_enroll,
+          :school_year_id,
+          :date_enroll,
+          :filiere_id,
+          :grade_id,
+          student_attributes:[
+              :id,
+              :first_name,
+              :last_name,
+              :middle_name,
+              :date_nai,
+              :lieu_nai,
+              :sexe,
+              :situation_family,
+              :regime_matrimonial,
+              :contact,
+              :address,
+              :personId,
+              :life,
+              :nom_pere,
+              :prenom_pere,
+              :profession_pere,
+              :contact_pere,
+              :address_pere,
+              :nom_mere,
+              :prenom_mere,
+              :profession_mere,
+              :contact_mere,
+              :address_mere,
+
+          ]
+
+      )
     end
 end

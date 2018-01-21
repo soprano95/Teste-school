@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180119213910) do
+ActiveRecord::Schema.define(version: 20180121093938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20180119213910) do
 
   create_table "enrollments", force: :cascade do |t|
     t.bigint "school_id"
-    t.integer "person_student_id"
+    t.bigint "student_id"
     t.string "type_enroll"
     t.string "num"
     t.string "num_enroll"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20180119213910) do
     t.index ["grade_id"], name: "index_enrollments_on_grade_id"
     t.index ["school_id"], name: "index_enrollments_on_school_id"
     t.index ["school_year_id"], name: "index_enrollments_on_school_year_id"
+    t.index ["student_id"], name: "index_enrollments_on_student_id"
   end
 
   create_table "ethnics", force: :cascade do |t|
@@ -126,6 +127,8 @@ ActiveRecord::Schema.define(version: 20180119213910) do
   end
 
   create_table "people", force: :cascade do |t|
+    t.bigint "religion_id"
+    t.bigint "ethnic_id"
     t.string "first_name"
     t.string "last_name"
     t.string "middle_name"
@@ -139,8 +142,20 @@ ActiveRecord::Schema.define(version: 20180119213910) do
     t.string "address"
     t.hstore "personId"
     t.boolean "life"
+    t.string "nom_pere"
+    t.string "prenom_pere"
+    t.string "profession_pere"
+    t.hstore "contact_pere"
+    t.string "address_pere"
+    t.string "nom_mere"
+    t.string "prenom_mere"
+    t.string "profession_mere"
+    t.hstore "contact_mere"
+    t.string "address_mere"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["ethnic_id"], name: "index_people_on_ethnic_id"
+    t.index ["religion_id"], name: "index_people_on_religion_id"
   end
 
   create_table "quartiers", force: :cascade do |t|

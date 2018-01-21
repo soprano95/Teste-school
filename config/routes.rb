@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root to: 'welcome#home'
+
+  get 'welcome/inconu'
+
   resources :leisures
   resources :leisure_types
   resources :skills
