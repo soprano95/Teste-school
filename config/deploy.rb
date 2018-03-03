@@ -2,7 +2,7 @@
 lock '3.4.1'
 
 set :application, 'Teste_school'
-set :repo_url, 'git@github.com::soprano95/Teste-school.git'
+set :repo_url, 'git@github.com:soprano95/Teste-school.git'
 
 set :user, "abdallah"
 set :stages, %w(production staging)
