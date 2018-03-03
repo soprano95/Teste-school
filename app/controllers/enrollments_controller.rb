@@ -88,6 +88,7 @@ class EnrollmentsController < ApplicationController
               :date_nai,
               :lieu_nai,
               :sexe,
+              :date_enroll,
               :situation_family,
               :regime_matrimonial,
               :contact,

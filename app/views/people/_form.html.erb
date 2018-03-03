@@ -13,68 +13,128 @@
 
   <div class="field">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :person_first_name %>
+    <%= form.text_field :first_name, id: :student_first_name %>
   </div>
 
   <div class="field">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :person_last_name %>
+    <%= form.text_field :last_name, id: :student_last_name %>
   </div>
 
   <div class="field">
     <%= form.label :middle_name %>
-    <%= form.text_field :middle_name, id: :person_middle_name %>
+    <%= form.text_field :middle_name, id: :student_middle_name %>
   </div>
 
   <div class="field">
     <%= form.label :sexe %>
-    <%= form.text_field :sexe, id: :person_sexe %>
+    <%= form.text_field :sexe, id: :student_sexe %>
   </div>
 
   <div class="field">
     <%= form.label :date_nai %>
-    <%= form.datetime_select :date_nai, id: :person_date_nai %>
+    <%= form.datetime_select :date_nai, id: :student_date_nai %>
   </div>
 
   <div class="field">
     <%= form.label :lieu_nai %>
-    <%= form.text_field :lieu_nai, id: :person_lieu_nai %>
+    <%= form.text_field :lieu_nai, id: :student_lieu_nai %>
   </div>
 
   <div class="field">
     <%= form.label :situation_family %>
-    <%= form.text_field :situation_family, id: :person_situation_family %>
+    <%= form.text_field :situation_family, id: :student_situation_family %>
   </div>
 
   <div class="field">
     <%= form.label :regime_matrimonial %>
-    <%= form.text_field :regime_matrimonial, id: :person_regime_matrimonial %>
+    <%= form.text_field :regime_matrimonial, id: :student_regime_matrimonial %>
   </div>
 
   <div class="field">
     <%= form.label :contact %>
-    <%= form.text_field :contact, id: :person_contact %>
+    <%= form.text_field :contact, id: :student_contact %>
   </div>
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :person_email %>
+    <%= form.text_field :email, id: :student_email %>
   </div>
 
   <div class="field">
     <%= form.label :address %>
-    <%= form.text_field :address, id: :person_address %>
+    <%= form.text_field :address, id: :student_address %>
   </div>
 
   <div class="field">
     <%= form.label :personId %>
-    <%= form.text_field :personId, id: :person_personId %>
+    <%= form.text_field :personId, id: :student_personId %>
   </div>
 
   <div class="field">
     <%= form.label :life %>
-    <%= form.check_box :life, id: :person_life %>
+    <%= form.check_box :life, id: :student_life %>
   </div>
+
+    <div class="field">
+      <%= form.label :nom_du_pere %>
+      <%= form.text_field :nom_du_pere, id: :student_nom_du_pere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :prenom_du_pere %>
+      <%= form.text_field :prenom_du_pere, id: :student_prenom_du_pere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :address_du_pere %>
+      <%= form.text_field :address_du_pere, id: :student_address_du_pere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :profession_du_pere %>
+      <%= form.text_field :proffession_du_pere, id: :student_proffession_du_pere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :tel_du_pere %>
+      <%= form.text_field :tel_du_pere, id: :student_tel_du_pere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email, id: :student_email %>
+    </div>
+
+    <div class="field">
+      <%= form.label :nom_mere %>
+      <%= form.text_field :nom_mere, id: :student_nom_mere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :prenom_mere %>
+      <%= form.text_field :prenom_mere, id: :student_prenom_mere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :address_mere %>
+      <%= form.text_field :address_mere, id: :student_address_mere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :tel_mere %>
+      <%= form.text_field :tel_mere, id: :student_tel_mere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :profession_mere %>
+      <%= form.text_field :proffession_mere, id: :student_proffession_mere %>
+    </div>
+
+    <div class="field">
+      <%= form.label :email_mere %>
+      <%= form.text_field :email_mere, id: :student_email_mere %>
+    </div>
 
   <div class="actions">
     <%= form.submit %>

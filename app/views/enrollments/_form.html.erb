@@ -11,38 +11,97 @@
     </div>
   <% end %>
 
-      <%= form.fields_for :student do |rs| %>
-        <div id="company" class="col-md-6 col-xs-12">
-          <%= rs.text_field :first_name, label: 'Nome', placeholder:'Votre' %>
-          <%= rs.text_field :last_name, label: 'Nome', placeholder:'Votre_Prenom' %>
-        </div>
-      <% end %>
-
-
-    <div class="col-md-6 col-xs-12">
-      <%= form.radio_button :sexe, "M", label: "Masculin", checked: true, inline: true %>
-      <%= form.radio_button :sexe, "F", label: "Feminin", inline: true %>
+    <%= form.fields_for :student do |rs| %>
+    <div class="field">
+      <%= rs.label :first_name %>
+      <%= rs.text_field :first_name, id: :student_first_name %>
     </div>
 
-    <div class="col-md-6 col-xs-12">
-      <%= form.text_field :nationalite, label: "Nationalité", class: 'form-control', placeholder: 'Malienne...' %>
+    <div class="field">
+      <%= rs.label :last_name %>
+      <%= rs.text_field :last_name, id: :student_last_name %>
     </div>
 
-    <div class="col-md-6 col-xs-12">
-      <%= form.text_field :lieu_nai, label: "Lieu de naissance", class: 'form-control', placeholder: 'Bamako...' %>
+    <div class="field">
+      <%= rs.label :middle_name %>
+      <%= rs.text_field :middle_name, id: :_middle_name %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :sexe %>
+      <%= rs.text_field :sexe, id: :student_sexe %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :date_nai %>
+      <%= rs.datetime_select :date_nai, id: :student_date_nai %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :lieu_nai %>
+      <%= rs.text_field :lieu_nai, id: :student_lieu_nai %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :situation_family %>
+      <%= rs.text_field :situation_family, id: :student_situation_family %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :regime_matrimonial %>
+      <%= rs.text_field :regime_matrimonial, id: :student_regime_matrimonial %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :nom_du_pere %>
+      <%= rs.text_field :nom_pere, id: :student_nom_pere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :prenom_du_pere %>
+      <%= rs.text_field :prenom_pere, id: :student_prenom_pere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :address_du_pere %>
+      <%= rs.text_field :address_pere, id: :student_address_pere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :profession_pere %>
+      <%= rs.text_field :profession_pere, id: :student_proffession_pere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :nom_mere %>
+      <%= rs.text_field :nom_mere, id: :student_nom_mere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :prenom_mere %>
+      <%= rs.text_field :prenom_mere, id: :student_prenom_mere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :address_mere %>
+      <%= rs.text_field :address_mere, id: :student_address_mere %>
+    </div>
+
+    <div class="field">
+      <%= rs.label :profession_mere %>
+      <%= rs.text_field :profession_mere, id: :student_proffession_mere %>
     </div>
 
 
+<% end %>
+    <div class="field">
+      <%= form.label :date_enroll %>
+      <%= form.datetime_select :date_enroll, id: :enrollment_date_enroll %>
+    </div>
 
+    <%= form.fields_for :group do %>
+        <%= form.submit "Create", class: "btn btn-success" %>
+        <%= link_to t('.cancel', :default => t("helpers.links.cancel")), :back, :class => 'btn btn-danger' if request.fullpath != "/banques" %>
+    <% end %>
 
-
-  <div class="field">
-    <%= form.label :date_enroll %>
-    <%= form.datetime_select :date_enroll, id: :enrollment_date_enroll %>
-  </div>
-
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
