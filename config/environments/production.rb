@@ -89,13 +89,13 @@ Rails.application.configure do
 
   ActionMailer::Base.smtp_settings =  {
       address:              'smtp.sendgrid.net',
-      domain:               'malinuse.com',
+      domain:               '178.79.163.82',
       user_name:            ENV["EMAILUSERNAME"],
       password:             ENV["EMAILPASSWORD"],
       port:                 587,
       authentication:       :plain,
       enable_starttls_auto: true  }
-      
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
