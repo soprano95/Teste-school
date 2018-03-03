@@ -2,7 +2,9 @@
 lock '3.4.1'
 
 set :application, 'Teste_school'
-set :https://github.com/soprano95/Teste-school.git'
+set :repo_url, 'github.com/soprano95/Teste-school.git'
+
+set :user, "abdallah"
 set :stages, %w(production staging)
 
 # Default branch is :master

@@ -7,12 +7,12 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-role :app, %w{deploy@178.79.163.82}
-role :web, %w{deploy@178.79.163.82}
-role :db, %w{deploy@178.79.163.82}, :primary => true
-set :branch, "production"
+role :app, %w{abdallah@178.79.163.82}
+role :web, %w{abdallah@178.79.163.82}
+role :db, %w{abdallah@178.79.163.82}, :primary => true
+set :branch, "MVC"
 set :rails_env, "production"
-set :deploy_to, "/var/www/ruby_thursday_production"
+set :deploy_to, "/var/www/Test_school/production"
 
 # role-based syntax
 # ==================
