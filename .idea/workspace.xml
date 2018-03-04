@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef4195cd-a5c9-4390-abf0-a1798ee66037" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Test_school.iml" afterPath="$PROJECT_DIR$/.idea/Test_school.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Capfile" afterPath="$PROJECT_DIR$/Capfile" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -125,14 +124,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-717">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="126">
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding>
-                <marker date="1520159740974" expanded="true" signature="2457:2513" ph="staging: &lt;4 keys&gt;" />
-                <marker date="1520159740974" expanded="true" signature="2514:2576" ph="production: &lt;4 keys&gt;" />
+                <marker date="1520198228373" expanded="true" signature="302:358" ph="staging: &lt;4 keys&gt;" />
+                <marker date="1520198228373" expanded="true" signature="317:325" ph="*default" />
+                <marker date="1520198228373" expanded="true" signature="338:357" ph="Test_schoo..." />
+                <marker date="1520198228373" expanded="true" signature="359:421" ph="production: &lt;4 keys&gt;" />
+                <marker date="1520198228373" expanded="true" signature="377:385" ph="*default" />
               </folding>
             </state>
           </provider>
@@ -158,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Capfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Capfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Capfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -248,6 +250,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Test_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,7 +506,7 @@
       <workItem from="1517693874865" duration="3057000" />
       <workItem from="1517741097956" duration="2097000" />
       <workItem from="1520088385429" duration="6489000" />
-      <workItem from="1520144143504" duration="6256000" />
+      <workItem from="1520144143504" duration="6900000" />
     </task>
     <task id="LOCAL-00001" summary="Corrections imidsac pour deployement">
       <created>1520090494632</created>
@@ -531,7 +547,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46602000" />
+    <option name="totallyTimeSpent" value="47246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -977,22 +993,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-717">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <marker date="1520159740974" expanded="true" signature="2457:2513" ph="staging: &lt;4 keys&gt;" />
-            <marker date="1520159740974" expanded="true" signature="2514:2576" ph="production: &lt;4 keys&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <marker date="1520198228373" expanded="true" signature="302:358" ph="staging: &lt;4 keys&gt;" />
+            <marker date="1520198228373" expanded="true" signature="317:325" ph="*default" />
+            <marker date="1520198228373" expanded="true" signature="338:357" ph="Test_schoo..." />
+            <marker date="1520198228373" expanded="true" signature="359:421" ph="production: &lt;4 keys&gt;" />
+            <marker date="1520198228373" expanded="true" signature="377:385" ph="*default" />
+          </folding>
         </state>
       </provider>
     </entry>
