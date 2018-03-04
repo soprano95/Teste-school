@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef4195cd-a5c9-4390-abf0-a1798ee66037" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Capfile" afterPath="$PROJECT_DIR$/Capfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -124,17 +125,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <marker date="1520198228373" expanded="true" signature="302:358" ph="staging: &lt;4 keys&gt;" />
-                <marker date="1520198228373" expanded="true" signature="317:325" ph="*default" />
-                <marker date="1520198228373" expanded="true" signature="338:357" ph="Test_schoo..." />
-                <marker date="1520198228373" expanded="true" signature="359:421" ph="production: &lt;4 keys&gt;" />
-                <marker date="1520198228373" expanded="true" signature="377:385" ph="*default" />
+                <marker date="1520202750583" expanded="true" signature="304:360" ph="staging: &lt;4 keys&gt;" />
+                <marker date="1520202750583" expanded="true" signature="319:327" ph="*default" />
+                <marker date="1520202750583" expanded="true" signature="340:359" ph="Test_schoo..." />
+                <marker date="1520202750583" expanded="true" signature="361:423" ph="production: &lt;4 keys&gt;" />
+                <marker date="1520202750583" expanded="true" signature="379:387" ph="*default" />
               </folding>
             </state>
           </provider>
@@ -160,11 +161,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Capfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Capfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Capfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,8 +207,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Capfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -506,7 +507,7 @@
       <workItem from="1517693874865" duration="3057000" />
       <workItem from="1517741097956" duration="2097000" />
       <workItem from="1520088385429" duration="6489000" />
-      <workItem from="1520144143504" duration="7344000" />
+      <workItem from="1520144143504" duration="7977000" />
     </task>
     <task id="LOCAL-00001" summary="Corrections imidsac pour deployement">
       <created>1520090494632</created>
@@ -547,7 +548,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47690000" />
+    <option name="totallyTimeSpent" value="48323000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -993,25 +994,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <marker date="1520198228373" expanded="true" signature="302:358" ph="staging: &lt;4 keys&gt;" />
-            <marker date="1520198228373" expanded="true" signature="317:325" ph="*default" />
-            <marker date="1520198228373" expanded="true" signature="338:357" ph="Test_schoo..." />
-            <marker date="1520198228373" expanded="true" signature="359:421" ph="production: &lt;4 keys&gt;" />
-            <marker date="1520198228373" expanded="true" signature="377:385" ph="*default" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1520202750583" expanded="true" signature="304:360" ph="staging: &lt;4 keys&gt;" />
+            <marker date="1520202750583" expanded="true" signature="319:327" ph="*default" />
+            <marker date="1520202750583" expanded="true" signature="340:359" ph="Test_schoo..." />
+            <marker date="1520202750583" expanded="true" signature="361:423" ph="production: &lt;4 keys&gt;" />
+            <marker date="1520202750583" expanded="true" signature="379:387" ph="*default" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,9 +8,11 @@ default: &default
 development:
   <<: *default
   database: Test_school_development
+
 test:
   <<: *default
   database: Test_school_test
+
 staging:
   <<: *default
   database: Test_school_staging
