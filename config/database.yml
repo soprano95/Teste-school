@@ -68,13 +68,7 @@ test:
 staging:
   <<: *default
   database: Test_school_staging
-  username: abdallah
-  password: <%= ENV['TEST_SCHOOL_DATABASE_PASSWORD'] %>
-
-
 
 production:
   <<: *default
   database: Test_school_production
-  username: abdallah
-  password: <%= ENV['TEST_SCHOOL_DATABASE_PASSWORD'] %>
